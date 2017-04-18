@@ -70,8 +70,8 @@ end
         elseif (q(cc,bb)<0)&&((p(cc,bb)/sqrt(p(cc,bb)^2+q(cc,bb)^2))<0.98);
             compansatedload(cc,bb*2)=-(p(cc,bb)/0.98)*sqrt(1-0.98^2);
         else
-            comp(cc,bb)=0;   
-             
+          
+             compansatedload(cc,bb*2)=q(cc,bb);
     end 
        
     end
@@ -85,5 +85,6 @@ end
     %%Buradan sonra kablo tipi seçme i?ine giricez.
     
     cableareas=[240,180,120,70];
+    
     
     
